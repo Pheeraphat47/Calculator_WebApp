@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -8,12 +11,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background: linear-gradient(to right, #83EAF1, #63A4FF);
 }
 
 .calculator {
     background: white;
-    width: 600px;    
+    width: 600px;
     border-radius: 12px;
     box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.6);
 }
@@ -25,6 +28,8 @@ body {
     align-items: center;
     justify-content: flex-end;
     border-radius: 10px 10px 0 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .calculator-display h1 {
@@ -34,11 +39,12 @@ body {
     overflow: hidden;
 }
 
-.calculator-button{
+.calculator-button {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     padding: 10px;
+    height: 400px;
 }
 
 .equal {
@@ -46,9 +52,9 @@ body {
     grid-row: 2 / span 4;
 }
 
-button{
+button {
     min-height: 50px;
-    font-size: 20px; 
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -56,16 +62,53 @@ button{
     background: rgb(199, 199, 199);
 }
 
-button:hover{
+button:hover {
     filter: brightness(110%);
 }
 
-button:active{
+button:active {
     transform: translateY(2px);
 }
 
-.operator{
-    background: orange;
+.operator {
+    background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
     color: white;
     font-size: 30px;
+}
+
+.clear-btn {
+    color: red;
+    font-weight: 700;
+}
+
+.btn {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .calculator {
+        width: 450px;
+    }
+
+    .calculator-button {
+        height: 350px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .calculator {
+        width: 320px;
+    }
+
+    button {
+        min-height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .calculator {
+        width: 270px;
+    }
 }

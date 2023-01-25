@@ -34,17 +34,17 @@ function Calculator() {
         <button className="operator" onClick={()=>display("-")}>-</button>
         <button className="operator" onClick={()=>display("*")}>x</button>
         <button className="operator" onClick={()=>display("/")}>÷</button>
-        <button onClick={()=>display("7")}>7</button>
-        <button onClick={()=>display("8")}>8</button>
-        <button onClick={()=>display("9")}>9</button>
-        <button onClick={()=>display("4")}>4</button>
-        <button onClick={()=>display("5")}>5</button>
-        <button onClick={()=>display("6")}>6</button>
-        <button onClick={()=>display("1")}>1</button>
-        <button onClick={()=>display("2")}>2</button>
-        <button onClick={()=>display("3")}>3</button>
-        <button onClick={()=>display(".")}>.</button>
-        <button onClick={()=>display("0")}>0</button>
+        <button onClick={()=>display("7")} className="btn">7</button>
+        <button onClick={()=>display("8")} className="btn">8</button>
+        <button onClick={()=>display("9")} className="btn">9</button>
+        <button onClick={()=>display("4")} className="btn">4</button>
+        <button onClick={()=>display("5")} className="btn">5</button>
+        <button onClick={()=>display("6")} className="btn">6</button>
+        <button onClick={()=>display("1")} className="btn">1</button>
+        <button onClick={()=>display("2")} className="btn">2</button>
+        <button onClick={()=>display("3")} className="btn">3</button>
+        <button onClick={()=>display(".")} className="btn">.</button>
+        <button onClick={()=>display("0")} className="btn">0</button>
         <button className="clear-btn" onClick={reset}>C</button>
         <button className="equal operator" onClick={calculate}>=</button>
 
